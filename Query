@@ -1,0 +1,13 @@
+select album_name, album_date from album
+	where album_date = '2021';
+select track_name, duration from track
+	order by duration desc,
+	limit 1;
+select track_name from track
+	where duration > (3,5 * 60);
+select collection_album_name from collection_album
+	where collection_album_date between '2018' and '2020';
+select singer_name from singer
+	where singer_name not in (' ');
+select track_name from track
+	where track_name like '%%5%%'
